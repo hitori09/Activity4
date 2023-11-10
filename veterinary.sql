@@ -40,6 +40,15 @@ CREATE TABLE doctors (
     
 );
 
+CREATE TABLE invoices (
+
+    invoiceid int NOT NULL PRIMARY KEY,
+    appointid int,
+    totalamount NUMERIC(10,2),
+    paymentdate TIME,
+
+    FOREIGN KEY (appointid) REFERENCES appointments (appointid)
+);
 
 
 
