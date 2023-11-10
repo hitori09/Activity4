@@ -51,7 +51,7 @@ CREATE TABLE invoices (
 );
 
 CREATE TABLE medicalrecords (
-    record_id INT PRIMARY KEY,
+    recordid INT PRIMARY KEY,
     animalid INT,
     recorderdate TIMESTAMP,
     doctor_id INT,
@@ -129,7 +129,7 @@ VALUES
 (9, 9, 60.00, '14:45:00'),
 (10, 10, 40.00, '11:30:00');
 
-INSERT INTO medicalrecords (recordid, animalid, recorddate, doctorid, diagnosis, prescription, notes)
+INSERT INTO medicalrecords (recordid, animalid, recorddate, doctor_id, diagnosis, prescription, notes)
 VALUES 
     (1, 1, '2023-01-05 00:00:00', 1, 'Health check', 'N/A', 'Regular checkup, no issue detected'),
     (2, 2, '2023-01-10 00:00:00', 1, 'Vaccination', 'Vaccine X', 'Administered vaccination X as per schedule'),
