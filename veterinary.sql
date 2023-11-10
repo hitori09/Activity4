@@ -107,7 +107,7 @@ VALUES
 (9, 9, '2023-05-02', 'Allergy treatment'),
 (10,10, '2023-05-20', 'Eye infection');
 
-INSERT INTO doctors(doctor_id, dfirstname, dlastname, speciality, phone, email)
+INSERT INTO doctors(doctor_id, d_firstname, d_lastname, speciality, phone, email)
 VALUES
 (1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
 (2, 'Dr.Antonio', 'Gonzales', 'Feline Specialist', '555-123-4567', 'antonio@example.com'),
